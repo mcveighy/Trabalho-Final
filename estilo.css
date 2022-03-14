@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/BackGround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;      
+   }
+
+   .logo{
+    width: 10%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.text-justify{
+    margin-top: 25px;
+    color: #fff;
+}
+
+   
+   .bg-dark{
+       background-color: rgb(104, 163, 155) !important;
+   }
+   
+   #sobre {
+       color: #fff
+   }
+
+
+.logoHome{
+ width: 20%;
+ border-radius: 50%;
+ opacity: 0.2;
+ position: fixed;
+ left: -1px;
+ 
+}
+
+.servico{
+    width: 20%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+
+.torta{
+    width: 200px;  
+    height: 150px;   
+}
+
+.card{
+    margin-top: 5px;
+    padding: 10px;
+}
+.w-25{
+    width: 40px;
+    height: 40px;
+   }
+
+   .contato{
+       color: #fff;
+       margin-bottom: 35px;
+   }
+
+   .col-md-4 {
+       color: #fff;
+   }
+   .col-md-6 {
+    color: #fff;
+   }
+   .col-md-3 {
+    color: #fff;
+   }

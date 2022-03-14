@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Alimentos Naturais</title>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <img class="logo" src="img/LogoCura.jpg"/>
+        <a class="navbar-brand" href="#" onclick="mostraPagina('#home')">CURA - Alimentos Naturais</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#quemSomos')"
+              data-toggle="collapse" data-target="#menuNavbar">Sobre a empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#produtos')"
+              data-toggle="collapse" data-target="#menuNavbar">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('#encomenda')"
+                data-toggle="collapse" data-target="#menuNavbar">Encomendas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('#contato')"
+                data-toggle="collapse" data-target="#menuNavbar">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+
+      <main class="container w-100 h-100 p-0">
+          
+          <section id="home" class="p-5 text-center h-100">
+            <img class="logoHome" src="./img/LogoUra.jpg" class="rounded-circle w-100 mt-5">
+          </section>
+
+          <section id="quemSomos" class="sobre p-5 text-center collapse">
+            <img  class="logo" src="./img/LogoUra.jpg" class="center-block rounded border w-75 mt-5">
+            <p class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+            <p  class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+            <p  class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+          </section>
+
+          <section id="produtos" class="equipe mt-3 p-5 collapse">
+            <div class="card" >
+                <h5 class="card-header"> <img class="servico" src="./img/TortaKiwi.jpg"/> Tortas</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Variedades</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et neque, nemo velit explicabo eos obcaecati, modi earum illo commodi quidem ex ea odio reiciendis officia distinctio tempora atque soluta dolore?</p>
+                    <a class="btn btn-primary" onclick="mostraPagina('#galeria')">Ver Mais</a>
+                </div>
+            </div>
+            <div class="card mt-2" >
+              <h5 class="card-header"> <img class="servico" src="./img/sobremesas-1.jpg"/> Sobremesas </h5>
+              <div class="card-body">
+                  <h5 class="card-title">Varios Sabores </h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et neque, nemo velit explicabo eos obcaecati, modi earum illo commodi quidem ex ea odio reiciendis officia distinctio tempora atque soluta dolore?</p>
+                  <a class="btn btn-primary" onclick="mostraPagina('#galeriaSobremesas')">Ver Mais</a>
+              </div>
+           </div>
+    
+            <div class="card mt-2" >
+                <h5 class="card-header"> <img class="servico" src="./img/Saladas.jpg"/> Saladas </h5>
+                <div class="card-body">
+                    <h5 class="card-title">Escolha Sua Preferida </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et neque, nemo velit explicabo eos obcaecati, modi earum illo commodi quidem ex ea odio reiciendis officia distinctio tempora atque soluta dolore?</p>
+                    <a class="btn btn-primary" onclick="mostraPagina('#galeriaSaladas')">Ver Mais</a>
+                </div>
+            </div>
+
+          </section>   
+          
+          <section id="encomenda" class="sobre p-5 text-center collapse">
+            <h1 class="contato">Faça Sua Encomenda</h1>
+           
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Nome</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                  <div class="valid-feedback">
+                </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Sobrenome</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                  <div class="valid-feedback">
+                </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustomUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Por Favoe escolha um username.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom03">Cidade</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                  <div class="invalid-feedback">
+                    Por Favor Entre com uma Cidade Válida.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom04">Estado</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                  <div class="invalid-feedback">
+                    Por Favor Entre com uma Estado Válido.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom05">Cep</label>
+                  <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                  <div class="invalid-feedback">
+                    Por Favor Entre com um CEP Válido.
+                  </div>
+                </div>
+              </div><br/><br/>
+              <select class="custom-select">
+                <option selected>Selecione o Produto</option>
+                <option value="1">Bolos</option>
+                <option value="2">Sobremesas</option>
+                <option value="3">Saladas</option>
+              </select><br/><br/>
+
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Forma Pagamento
+                </a>              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Boleto</a>
+                  <a class="dropdown-item" href="#">Pix</a>
+                  <a class="dropdown-item" href="#">Cartão</a>
+                </div>
+              </div> <br/><br/>              
+              <div class="form-group">
+                <div class="form-check"> 
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Concorda com Termos
+                  </label>
+                  <div class="invalid-feedback">
+                    Você deve concordar antes de Enviar.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+            
+            <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+          </section>
+
+          
+         
+          <section id="contato" class="sobre p-5 text-center collapse">
+            <img class="logo" src="img/LogoUra.jpg" class="center-block rounded border w-75 mt-4">
+            <h3>Entre em contato conosco</h3>
+            <p>
+                <a href="mailto:mcveighy@gmail.com">
+                    <img class="w-25" src="img/email.svg" />                
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=55489999912345&text='Texto da Mensagem'">
+                    <img class="w-25" src="img/icons8-whatsapp.svg"/>
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://www.instagram.com/empresa/">
+                    <img class="w-25" src="img/icons8-instagram.svg" />
+                </a>
+            </p>
+            
+          </section>
+
+      </main>
+
+    </section>
+
+    <section id="galeria" class="sobre p-2 text-center collapse" >
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/tortaChocolate.jpg"></h5>
+              <p class="card-text">Torta de chocolate, com ingredientes naturais chocolate 70%.</p>
+              <a onclick="mostraPagina('#encomenda')"class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/tortaBanana.jpg"></h5>
+              <p class="card-text">Totata de Banana com massa integral.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/tortaKiwi.jpg"></h5>
+              <p class="card-text">Torta de Kiwi, com ingredientes naturais, massa Integral.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/tortaMorango.jpg"></h5>
+              <p class="card-text">Totata de morango.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="galeriaSobremesas" class="sobre p-2 text-center collapse" >
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/sobremesas-1.jpg"></h5>
+              <p class="card-text">Sobremesa de chocolate, com Frutas Vermelhas.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/sobremesa-sem-acucar.jpg"></h5>
+              <p class="card-text">Pudim de ameixa.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/Sorvetes.jpg"></h5>
+              <p class="card-text">Sorvete de Frutas Vermelhas.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/Sorvete II.jpg"></h5>
+              <p class="card-text">Sorvete acerola, com morango e amora</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="galeriaSaladas" class="sobre p-2 text-center collapse" >
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/Saladas.jpg"></h5>
+              <p class="card-text">Salada variada com Tomate, Alface, repolho, agrião, abobora , soja e molho especial.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/SaladaII.jpg"></h5>
+              <p class="card-text">Capelete com Espargos, tomate  e saladas variadas.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 ><img class="torta" src="img/SaladaIII.jpg"></h5>
+              <p class="card-text">Azeitona, ervilha, osvos, figo frito.</p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img class="torta" src="img/Salada IV.jpg"></h5>
+              <p class="card-text">Ovos,tomate, Beterraba, salsa e molho </p>
+              <a href="#" class="btn btn-primary">Faça Sua Encomenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+        
+  </body>
+</html>
